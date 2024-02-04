@@ -1,0 +1,539 @@
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway&family=Tajawal&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=PT+Serif&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
+
+<style>
+    body{
+        background-color: #2e666a;
+        color: #2e666a;
+
+    }
+    .card {
+        transition: 0.3s;
+        width: 40%;
+        background-color: rgba(238,238,238, 0.8);
+        margin-left: 550px;
+        border-radius: 0px;
+    }
+
+    .bottom-right.inView {
+        opacity: 1;
+        -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+        transform: translateY(0px) rotate(0deg) translateZ(0);
+        margin-top: 20px;
+    }
+    .inView {
+        opacity: 1;
+        -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+        transform: translateY(0px) rotate(0deg) translateZ(0);
+        margin-top: 20px;
+    }
+    section {
+        padding:20px;
+        margin-top: 20px;
+    }
+
+    .card1 {
+        /* transition: 0.3s;
+        width: 200px;
+        height: 200px;
+        background-color: rgba(238,238,238, 0.8);
+        margin-left: 550px;
+        height:400px; */
+        transition: 0.3s;
+        width: 40%;
+        background-color: rgba(238,238,238, 0.8);
+        margin-left: 550px;
+        
+        -webkit-transform: translateY(50px) rotate(-5deg) translateZ(0);
+        transform: translateY(50px) rotate(-5deg) translateZ(0);
+        -webkit-transition-delay: .9s;
+        -o-transition-delay: .9s;
+        transition-delay: .9s;
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s;
+        opacity: 0;
+    }
+    img{
+        object-fit: cover;
+    }
+
+    .container {
+        padding: 40px 40px;
+
+    }
+
+
+    .sidenav {
+        height: 100%;
+        width: 300px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding-top: 50px;
+        font-family: 'Darker Grotesque';
+
+        
+    }
+
+    .sidenav a {
+        padding: 6px 6px 6px 32px;
+        text-decoration: none;
+        text-align: right;
+        font-size: 25px;
+        color: #eeeeee; 
+        display: block;
+        font-size:medium;
+    }
+
+    .sidenav a:hover {
+        color: #0c343d;
+    }
+
+    @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    }
+
+    .image{
+        margin-left: 1000px;
+    }
+    #workshops{
+        display: none;
+    }
+
+
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">How to Get Involved</a>
+    <a href="#">News + Resources</a>
+    <a href="#" onclick="workshops()">Workshops</a>
+    <a href="#" onclick="events()">Events</a>
+</div>
+
+<div id="workshops">
+<h2>Workshops</h2>
+
+<div class="card" >
+  <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px;">
+    <h4 style="font-family: 'PT Serif'; text-align: center; margin-bottom: 20px;"><b>Responsible AI: A Policy Approach to Bias Eradication</b></h4> 
+    <p style="font-family: 'Darker Grotesque'; font-size:small;">As part of our aim to increase AI literacy among the youth we held “Responsible AI: A Policy Approach to Bias Eradication”, an interactive workshop under the AI Fringe where we taught participants about the importance of safe AI. In this interactive session, featuring guest speaker Matheace Ramautra, an AI Legal and Ethic Practitioner, we introduced the effects of AI biases on society, and potential ways to combat them through policy. Opening with a short presentation on AI biases and how it manifests in different sectors, our workshop was followed by an activity where groups will propose their own policies to mitigate them. There were many questions and open discussions.</p> 
+  </div>
+</div>
+
+<div >
+    
+    <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
+      <img src="icebreaker.jpg" class="card-img-top" >
+    </div>
+    
+    <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
+        <img src="winner.jpg" class="card-img-top" >
+    </div>
+    <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
+        <img src="matheace.jpg" class="card-img-top" >
+    </div>
+    <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
+        <img src="activity.jpg" class="card-img-top">
+      </div>
+  </div>
+
+</div>
+
+<div id="events">
+
+<h2>Events </h2>
+
+<div class="card">
+  <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px;">
+    <h4 style="font-family: 'PT Serif'; text-align: center; margin-bottom: 20px;"><b>Truth vs Tech: Tackling Misinformation and Deepfakes</b></h4> 
+    <p style="font-family: 'Darker Grotesque'; font-size:small;">At the AI and Society Forum, we spoke at the AI and Society Forum on the panel “Truth vs Tech: Tackling Misinformation and Deepfakes”. The event held over 240 people and it was uplifting seeing so many people interested in our talk, despite being the youngest speakers and attendees of the event. Throughout the day, we heard talks from many people experienced in the field, from Abeba Birhane to Dr Maya Indira. </p> 
+  </div>
+</div>
+  
+  <div >
+      
+      <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
+        <img src="panel1.jpg" class="card-img-top" >
+      </div>
+      
+      <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
+          <img src="panel2.jpg" class="card-img-top" >
+      </div>
+      <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
+          <img src="panel3.jpg" class="card-img-top" >
+      </div>
+    </div>
+  
+  </div>
+
+</div>
+
+</body>
+<script>
+    let elementsArray = document.querySelectorAll(".card1");
+    console.log(elementsArray);
+    window.addEventListener('scroll', fadeIn ); 
+    function fadeIn() {
+        for (var i = 0; i < elementsArray.length; i++) {
+            var elem = elementsArray[i]
+            var distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
+            if (distInView < 0) {
+                elem.classList.add("inView");
+            } else {
+                elem.classList.remove("inView");
+            }
+        }
+    }
+    fadeIn();
+
+    function workshops(){
+        document.getElementById('events').style.display='none';
+        document.getElementById('workshops').style.display='block';
+    }
+    function events(){
+        document.getElementById('workshops').style.display='none';
+        document.getElementById('events').style.display='block';
+    }
+</script> -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway&family=Tajawal&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=PT+Serif&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
+
+<style>
+    body{
+        background-color: #2e666a;
+        color: #2e666a;
+
+    }
+    .card {
+        transition: 0.3s;
+        width: 40%;
+        background-color: rgba(238,238,238, 0.8);
+        margin-left: 550px;
+        border-radius: 0px;
+    }
+
+    .bottom-right.inView {
+        opacity: 1;
+        -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+        transform: translateY(0px) rotate(0deg) translateZ(0);
+        margin-top: 20px;
+    }
+    .inView {
+        opacity: 1;
+        -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+        transform: translateY(0px) rotate(0deg) translateZ(0);
+        margin-top: 20px;
+    }
+    section {
+        padding:20px;
+        margin-top: 20px;
+    }
+
+    .card1 {
+        /* transition: 0.3s;
+        width: 200px;
+        height: 200px;
+        background-color: rgba(238,238,238, 0.8);
+        margin-left: 550px;
+        height:400px; */
+        transition: 0.3s;
+        width: 40%;
+        background-color: rgba(238,238,238, 0.8);
+        margin-left: 550px;
+        
+        -webkit-transform: translateY(50px) rotate(-5deg) translateZ(0);
+        transform: translateY(50px) rotate(-5deg) translateZ(0);
+        -webkit-transition-delay: .9s;
+        -o-transition-delay: .9s;
+        transition-delay: .9s;
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s;
+        opacity: 0;
+    }
+    img{
+        object-fit: cover;
+    }
+
+    .container {
+        padding: 40px 40px;
+
+    }
+
+
+    .sidenav {
+        height: 100%;
+        width: 300px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding-top: 50px;
+        font-family: 'Darker Grotesque';
+
+        
+    }
+
+    .sidenav a {
+        padding: 6px 6px 6px 32px;
+        text-decoration: none;
+        text-align: right;
+        font-size: 25px;
+        color: #eeeeee; 
+        display: block;
+        font-size:medium;
+    }
+
+    .sidenav a:hover {
+        color: #0c343d;
+    }
+
+    @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    }
+
+    .image{
+        margin-left: 1000px;
+    }
+    #workshops{
+        display: none;
+        margin-bottom: 250px;
+    }
+    #howtogetinvolved{
+        display: none;
+        margin-bottom: 250px;
+    }
+    #aboutus{
+        display: block;
+        margin-bottom: 250px;
+    }
+    #events{
+        display:none;
+        margin-bottom: 250px;
+    }
+    .footer {
+        width: 100%;
+        height: 200px;
+        background-color: rgba(238,238,238, 1);
+        color: #2e666a;
+        text-align: left;
+        padding-top: 30px;
+        margin-top: 50px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 5;
+        position: fixed;
+    }   
+    .foot-text {
+        width: 50%;
+    }
+
+
+
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+    <!-- <a href="#">Home</a> -->
+    <a href="#" onclick="aboutus()">About Us</a>
+    <a href="#" onclick="howtogetinvolved()">How to Get Involved</a>
+    <!-- <a href="#">News + Resources</a> -->
+    <a href="#" onclick="workshops()">Workshops</a>
+    <a href="#" onclick="events()">Events</a>
+</div>
+
+<div id="aboutus">
+    <h2>About Us</h2>
+    
+    <div class="card" >
+      <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px;">
+        <h4 style="font-family: 'PT Serif'; text-align: center; margin-bottom: 20px;"><b>Our Aim</b></h4> 
+        <p style="font-family: 'Darker Grotesque'; font-size:small;">  We are a youth group aiming to increase AI literacy based in London, UK. As AI continues to be implemented in our daily lives and industry sectors across the world, it is important that the next generation, who will be one of the first to experience the impacts of AI in the workplace, understand its benefits, flaws, and how best to combat future problems. We aim to create immersive, educational (and fun!) workshops and sessions for 10-18-year-olds across the UK, hosted by fellow young people, to raise awareness about AI. </p>
+        <h4 style="font-family: 'PT Serif'; text-align: center; margin-bottom: 20px;"><b>Meet the Team</b></h4>
+        <div style="margin-bottom:150px; margin-top: 50px;">
+            <img src="neha.jpg" alt="NEHA ADAPALA" style=" border:none; margin-right: 30px; float: left; width: 200px;">
+            <h4 style="font-family: 'PT Serif'; text-align: center; margin-bottom: 20px; "><b>Neha Adapala</b></h4>
+            <p style="font-family: 'Darker Grotesque'; font-size:small;"> Neha is a Year 12 student who hopes to study Computer Science at university. She is interested in Artificial Intelligence, neurotechnology and femtech, and art.</p>
+        </div>
+        <div>
+            <img src="elo.jpg" alt="ELO Esalomi" style=" border:none; margin-right: 30px; float: left; width: 200px; height: 200px;">
+            <h4 style="font-family: 'PT Serif'; text-align: center; margin-bottom: 20px; "><b>Elo Esalomi</b></h4>
+            <p style="font-family: 'Darker Grotesque'; font-size:small;"> Elo is a Year 13 student who hopes to study Computer Science at university. She is interested in Artificial Intelligence, policy, and music. </p>
+        </div>
+      
+      
+    </div>
+</div>
+</div>
+
+<div id="howtogetinvolved">
+
+    <h2>How to Get Involved</h2>
+    
+    <div class="card">
+        <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px;">
+            <h4 style="font-family: 'PT Serif'; text-align: center; margin-bottom: 20px;"><b>Contact Us</b></h5>
+            <h5 style="font-family: 'PT Serif'; text-align: left; margin-bottom: 15px;"><b>Email</b></h5>
+            <p style="font-family: 'Darker Grotesque'; font-size:small;"> youthinai.official@gmail.com </p>
+            <h5 style="font-family: 'PT Serif'; text-align: left; margin-bottom: 15px;"><b>Instagram</b></h5>
+            <p style="font-family: 'Darker Grotesque'; font-size:small;"> @youthinai </p>
+            <h5 style="font-family: 'PT Serif'; text-align: left; margin-bottom: 15px;"><b>X</b></h5>
+            <p style="font-family: 'Darker Grotesque'; font-size:small;"> @youth_in_ai </p>
+        </div>
+        </div>
+    </div>
+
+
+<div id="workshops">
+<h2>Workshops</h2>
+
+<div class="card" >
+  <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px;">
+    <h4 style="font-family: 'PT Serif'; text-align: center; margin-bottom: 20px;"><b>Responsible AI: A Policy Approach to Bias Eradication</b></h4> 
+    <p style="font-family: 'Darker Grotesque'; font-size:small;">As part of our aim to increase AI literacy among the youth we held “Responsible AI: A Policy Approach to Bias Eradication”, an interactive workshop under the AI Fringe where we taught participants about the importance of safe AI. In this interactive session, featuring guest speaker Matheace Ramautra, an AI Legal and Ethic Practitioner, we introduced the effects of AI biases on society, and potential ways to combat them through policy. Opening with a short presentation on AI biases and how it manifests in different sectors, our workshop was followed by an activity where groups will propose their own policies to mitigate them. There were many questions and open discussions.</p> 
+  </div>
+</div>
+
+<div >
+    
+    <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
+      <img src="icebreaker.jpg" class="card-img-top" >
+    </div>
+    
+    <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
+        <img src="winner.jpg" class="card-img-top" >
+    </div>
+    <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
+        <img src="matheace.jpg" class="card-img-top" >
+    </div>
+    <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
+        <img src="activity.jpg" class="card-img-top">
+      </div>
+  </div>
+
+</div>
+
+<div id="events">
+
+<h2>Events </h2>
+
+<div class="card">
+  <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px;">
+    <h4 style="font-family: 'PT Serif'; text-align: center; margin-bottom: 20px;"><b>Truth vs Tech: Tackling Misinformation and Deepfakes</b></h4> 
+    <p style="font-family: 'Darker Grotesque'; font-size:small;">At the AI and Society Forum, we spoke at the AI and Society Forum on the panel “Truth vs Tech: Tackling Misinformation and Deepfakes”. The event held over 240 people and it was uplifting seeing so many people interested in our talk, despite being the youngest speakers and attendees of the event. Throughout the day, we heard talks from many people experienced in the field, from Abeba Birhane to Dr Maya Indira. </p> 
+  </div>
+</div>
+  
+  <div >
+      
+      <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
+        <img src="panel1.jpg" class="card-img-top" >
+      </div>
+      
+      <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
+          <img src="panel2.jpg" class="card-img-top" >
+      </div>
+      <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
+          <img src="panel3.jpg" class="card-img-top" >
+      </div>
+    </div>
+  
+  </div>
+
+</div>
+
+<div class="footer">
+    <div class="foot-text" style="float: left;">
+        <h4 style="font-family: 'PT Serif'; text-align: left; margin-bottom: 20px; margin-left: 30px;"><b>"Whether AI will help us reach our aspirations or reinforce the unjust inequalities is ultimately up to us."</b></h4> 
+        <p style="margin-left: 30px; font-family: 'PT Serif';">-Joy Buolamwini</p>
+    </div>
+    <div class="foot-text" style="float: right;">
+        <p style="font-family: 'Darker Grotesque'; font-size:small; text-align: right; margin-right: 30px;">Contact Us</p>
+        <p style="font-family: 'Darker Grotesque'; font-size:small; text-align: right; margin-right: 30px;">Instagram: @youthinai</p>
+        <p style="font-family: 'Darker Grotesque'; font-size:small; text-align: right; margin-right: 30px;">X: @youth_in_ai</p>
+        <p style="font-family: 'Darker Grotesque'; font-size:small; text-align: right; margin-right: 30px;">Email: youthinaiofficial@gmail.com</p>
+    </div>
+</div>
+
+</body>
+<script>
+    let elementsArray = document.querySelectorAll(".card1");
+    console.log(elementsArray);
+    window.addEventListener('scroll', fadeIn ); 
+    function fadeIn() {
+        for (var i = 0; i < elementsArray.length; i++) {
+            var elem = elementsArray[i]
+            var distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
+            if (distInView < 0) {
+                elem.classList.add("inView");
+            } else {
+                elem.classList.remove("inView");
+            }
+        }
+    }
+    fadeIn();
+
+    function workshops(){
+        document.getElementById('events').style.display='none';
+        document.getElementById('workshops').style.display='block';
+        document.getElementById('howtogetinvolved').style.display='none';
+        document.getElementById('aboutus').style.display='none';
+    }
+    function events(){
+        document.getElementById('workshops').style.display='none';
+        document.getElementById('events').style.display='block';
+        document.getElementById('howtogetinvolved').style.display='none';
+        document.getElementById('aboutus').style.display='none';
+    }
+
+    function howtogetinvolved(){
+        document.getElementById('howtogetinvolved').style.display='block';
+        document.getElementById('events').style.display='none';
+        document.getElementById('workshops').style.display='none';
+        document.getElementById('aboutus').style.display='none';
+    }
+
+    function aboutus(){
+        document.getElementById('howtogetinvolved').style.display='none';
+        document.getElementById('events').style.display='none';
+        document.getElementById('workshops').style.display='none';
+        document.getElementById('aboutus').style.display='block';
+    }
+</script>
