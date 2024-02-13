@@ -331,11 +331,11 @@
         margin-left: 1000px;
     }
     #workshops{
-        display: none;
+        display: block;
         margin-bottom: 250px;
     }
     #howtogetinvolved{
-        display: none;
+        display: block;
         margin-bottom: 250px;
     }
     #aboutus{
@@ -343,7 +343,7 @@
         margin-bottom: 250px;
     }
     #events{
-        display:none;
+        display:block;
         margin-bottom: 250px;
     }
     .footer {
@@ -371,12 +371,14 @@
 <body>
 
 <div class="sidenav">
-    <!-- <a href="#">Home</a> -->
-    <a href="#" onclick="aboutus()">About Us</a>
-    <a href="#" onclick="howtogetinvolved()">How to Get Involved</a>
+    
+    <img src="transparent_yia.PNG" alt="Youth in AI Logo" style=" border:none; ">
+    <a onclick="home()">Home</a>
+    <a onclick="aboutus()">About Us</a>
+    <a onclick="howtogetinvolved()">How to Get Involved</a>
     <!-- <a href="#">News + Resources</a> -->
-    <a href="#" onclick="workshops()">Workshops</a>
-    <a href="#" onclick="events()">Events</a>
+    <a onclick="workshops()">Workshops</a>
+    <a onclick="events()">Events</a>
 </div>
 
 <div id="aboutus">
@@ -515,6 +517,12 @@
         document.getElementById('workshops').style.display='block';
         document.getElementById('howtogetinvolved').style.display='none';
         document.getElementById('aboutus').style.display='none';
+    }
+    function home(){
+        document.getElementById('events').style.display='block';
+        document.getElementById('workshops').style.display='block';
+        document.getElementById('howtogetinvolved').style.display='block';
+        document.getElementById('aboutus').style.display='block';
     }
     function events(){
         document.getElementById('workshops').style.display='none';
