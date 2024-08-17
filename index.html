@@ -20,7 +20,7 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="script.js">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
     <body >
@@ -28,14 +28,14 @@
         <div class="cursor-dot" data-cursor-dot></div>
         <div class="cursor-outline" data-cursor-outline></div>
 
-        <div class="sidenav">
+        <div class="sidenav" >
             <!-- <a href="#">Home</a> -->
             <!-- <a href="#">News + Resources</a> -->
-            <a href="#" onclick="home()" style="font-size:30px; padding-top: 3px;"><b>Youth in AI</b></a>
-            <a href="#" onclick="events()" style="padding-left: 900px; font-size: 30px;">Events    |</a>
-            <a href="#" onclick="hackathons()" style="font-size: 30px;">Hackathons    |</a>
-            <a href="#" onclick="articles()" style="font-size: 30px;">Articles    |</a>
-            <a href="#" onclick="aboutus()" style="font-size: 30px;">About Us    |</a>
+            <a href="#" onclick="home()" style="font-size:30px; padding-top: 3px; float: left; width: 45%; text-align: left;"><b>Youth in AI</b></a>
+            <a href="#" onclick="events()" style="width: 12%; font-size: 30px; float: left; margin-top: -7px; ">Events    |</a>
+            <a href="#" onclick="hackathons()" style="width: 13%; font-size: 30px; float: left; margin-top: -7px;">Hackathons    |</a>
+            <a href="#" onclick="articles()" style="width: 10%; font-size: 30px; float: left; margin-top: -7px;">Articles    |</a>
+            <a href="#" onclick="aboutus()" style="width: 11%; font-size: 30px; float: left; margin-top: -7px;">About Us    |</a>
 
         </div>
 
@@ -76,40 +76,53 @@
 
 
 
-        <div id="home" style="margin-bottom: 500px;padding-bottom: 0px;">
-            <div style="width: 100%; margin-left: 0px;">
-                <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px; margin-left: 0px; width: 100%; align-content: left; margin-left: 30px; height: 570px; color: #e8dab2;">
+        <div id="home" style="margin-bottom: 500px;padding-bottom: 0px; ">
+            <!-- <div style="width: 100%; margin-left: 0px; display: inline-block;">
+                <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px; margin-left: 0px; width: 100%; align-content: left; margin-left: 30px; height: 570px; color: #e8dab2; display: inline-block; ">
 
-                    <h1 class="title1" style="padding-bottom: 0px; ">Y o u t h _ i n _ A I</h1>
-                    <h2 class="title1" style="font-size: 50px; margin-top: 0px;">Don't wait for tomorrow's tech - make it.</h1>
+                    <h1 class="title1" style="padding-bottom: 0px; width: 100%; ">Y o u t h _ i n _ A I</h1>
+                    <h2 class="title1" style="font-size: 50px; margin-top: 0px; width: 100%">Don't wait for tomorrow's tech - make it.</h1>
                     <p style="font-family: 'Darker Grotesque'; font-size: 25px; text-align: left; margin-left: 0px; width: 900px;"> We aim to improve AI literacy among underrepresented UK youth through free hackathons. Our events include educational seminars, project building, and extra resources.</p>
+                </div>
+            </div> -->
+            <div style="width: 100%; margin-left: 0; display: block;">
+                <div class="container" style="padding: 50px 70px; margin-left: 0; width: 100%; color: #e8dab2; display: block;">
+            
+                    <h1 class="title1" style="padding-bottom: 0; width: 100%;">Y o u t h _ i n _ A I</h1>
+                    <h2 class="title1" style="font-size: 50px; margin-top: 0; width: 100%;">Don't wait for tomorrow's tech - make it.</h2>
+                    <p style="font-family: 'Darker Grotesque'; font-size: 25px; text-align: left; margin-left: 0; max-width: 100%;">We aim to improve AI literacy among underrepresented UK youth through free hackathons. Our events include educational seminars, project building, and extra resources.</p>
                 </div>
             </div>
 
+            
 
-            <div class="card" style="margin-left: 0px;float:left; width: 50%; border: none; animation: none; margin-bottom: 70px; ">
-                <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px; margin-left: 0px; align-content: left; margin-left: 30px; ">
-                    <p style="font-family: 'Darker Grotesque'; font-size: 30px; text-align: left; margin-left: 0px;">Hackathons</p>
-                    <p style="font-family: 'Darker Grotesque'; font-size: 20px; text-align: left; margin-left: 0px; ">Hackathons are really exciting events where you and some teammates work together to brainstorm ideas and for some, bring them to life. You can attend on your own as you are encouraged to meet new people and form new relationships over the course of the hackathon. However, feel free to come with a friend- it can seem intimidating at first so knowing someone makes the experience much easier. </p>
-                    <p style="font-family: 'Darker Grotesque'; font-size: 20px; text-align: left; margin-left: 0px; ">You will essentially spend the day brainstorming different ideas and creating projects that solve real problems.</p>
-                    <p style="font-family: 'Darker Grotesque'; font-size: 20px; text-align: left; margin-left: 0px; ">Our hackathons include a technical and non-technical track. Those who have previous coding experience may wish to take part in the technical track where they work to bring the idea to reality. Teams can also choose the non-technical track if they have no coding experience where they have to brainstorm an idea and create different items to present their work (e.g. an essay, a presentation, a one-pager).</p>
+
+            <div style="width: 100%; margin-left: 0px; display: flex; background-color: #e8dab2;"> 
+                <div style="padding-top: 50px; padding-bottom:50px; margin-left: 0px; width: 40%; align-content: left; margin-left: 100px; float: left; box-sizing: border-box; color: #352438;">
+                    
+
+                    <!-- <h1 style="font-family: 'Darker Grotesque'; text-align: left; margin-bottom: 20px; font-size: 120px; margin-left: 0px">Coming soon...</h1>
+                    <p style="font-family: 'Darker Grotesque'; font-size: 25px; text-align: left; margin-left: 0px; width: 900px;"> If you would like to be a volunteer at Youth in AI (no eligibility requirements) please contact us at youthinai@gmail.com</p> -->
+                    <p style="font-family: 'Darker Grotesque'; font-size: 30px; text-align: left; ">Hackathons</p>
+                    <p style="font-family: 'Darker Grotesque'; font-size: 20px; text-align: left;">Hackathons are really exciting events where you and some teammates work together to brainstorm ideas and for some, bring them to life. You can attend on your own as you are encouraged to meet new people and form new relationships over the course of the hackathon. However, feel free to come with a friend- it can seem intimidating at first so knowing someone makes the experience much easier. </p>
+                    <p style="font-family: 'Darker Grotesque'; font-size: 20px; text-align: left;">You will essentially spend the day brainstorming different ideas and creating projects that solve real problems.</p>
+                    <p style="font-family: 'Darker Grotesque'; font-size: 20px; text-align: left;">Our hackathons include a technical and non-technical track. Those who have previous coding experience may wish to take part in the technical track where they work to bring the idea to reality. Teams can also choose the non-technical track if they have no coding experience where they have to brainstorm an idea and create different items to present their work (e.g. an essay, a presentation, a one-pager).</p>
                 </div>
-                </div>
-                <div class="card" style="margin-left: 0px;float:left; width: 860px; padding-right: 100px; margin-right: 0px; border: none; height: 417.5px; animation: none; margin-bottom: 70px; padding-top: 70px; padding-left: 20px; height: 569px;">
+                <div style="padding-top: 50px;padding-bottom:50px; margin-left: 0px; width: 40%; align-content: left; margin-left: 100px; float: left; box-sizing: border-box; color: #352438;">
                     <!-- <div class="container" style="margin-left: 0px; align-content: left; margin-left: 30px; margin-right: 0px; padding-right: 0px;"> -->
-                        <p style="font-family: 'Darker Grotesque'; font-size: 30px; text-align: left; margin-left: 0px; ">Educational seminars </p>
-                <p style="font-family: 'Darker Grotesque'; font-size: 20px; text-align: left; margin-left: 0px;">We start each hackathon by teaching you different concepts, either technical or based around a problem that AI systems face. The prompt for the hackathon will be based on the information from the seminar, so it’s a paramount part of the day that you won’t want to miss! </p>
-                <p style="font-family: 'Darker Grotesque'; font-size: 30px; text-align: left; margin-left: 0px;">Extra resources </p>
-                <p style="font-family: 'Darker Grotesque'; font-size: 20px; text-align: left; margin-left: 0px;">Ultimately, our goal is to increase AI literacy and unfortunately, we cannot thoroughly do that in just one day. That is why we will provide access to extra resources you can research in your free time. These might give you ideas for the next hackathon, or they can blossom into ideas of your own! Whatever it may be, we strongly recommend that you take a look at them.                 </p>
+                    <p style="font-family: 'Darker Grotesque'; font-size: 30px; text-align: left;  ">Educational seminars </p>
+                    <p style  ="font-family: 'Darker Grotesque'; font-size: 20px; text-align: left;">We start each hackathon by teaching you different concepts, either technical or based around a problem that AI systems face. The prompt for the hackathon will be based on the information from the seminar, so it’s a paramount part of the day that you won’t want to miss! </p>
+                    <p style="font-family: 'Darker Grotesque'; font-size: 30px; text-align: left; ">Extra resources </p>
+                    <p style="font-family: 'Darker Grotesque'; font-size: 20px; text-align: left; ">Ultimately, our goal is to increase AI literacy and unfortunately, we cannot thoroughly do that in just one day. That is why we will provide access to extra resources you can research in your free time. These might give you ideas for the next hackathon, or they can blossom into ideas of your own! Whatever it may be, we strongly recommend that you take a look at them.                 </p>
         
                 <!-- </div> -->
                 </div>
+                <div style="clear: both;"></div>
+            </div>
 
-
-
-            <div  style="height: 1230px;" >
+            <div  style="display: inline-block;" >
             <h4 style="font-family: 'Darker Grotesque'; text-align: center; margin-bottom: 0px; margin-top: 100px; font-size: 70px; margin-left: 30px; color:#e8dab2;"><b>FAQ</b></h4>
-                <ul class="accordion" style="margin-left: 200px;">
+                <ul class="accordion" >
                    <li>
                        <input type="radio" name="accordion" id="first">
                        <label for="first" style="font-family: 'Darker Grotesque'; font-size: 30px; margin-left: 30px; text-decoration: italic; color:#e8dab2;">Who is eligible to compete in our hackathons?</label>
@@ -143,7 +156,7 @@
                </ul>
                </div>
 
-               <div class="card" style="margin-left: 0px;float:left; width: 60%; border: none; animation: none; margin-bottom: 70px; ">
+               <!-- <div class="card" style="margin-left: 0px;float:left; width: 60%; border: none; animation: none; margin-bottom: 70px; ">
                 <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px; margin-left: 0px; align-content: left; margin-left: 30px; ">
                     <p style="font-family: 'Darker Grotesque'; font-size: 25px; text-align: left; margin-left: 0px; width: 900px; margin-bottom: 30px;"> "Super engaging and interactive- walked away learning a lot"</p>
                     
@@ -154,11 +167,27 @@
                 </div>
                 </div>
                 <div class="card" style="margin-left: 0px;float:left; width: 690px; padding-right: 0px; margin-right: 0px; border: none; height: 417.5px; animation: none; margin-bottom: 70px;">
-                    <!-- <div class="container" style="margin-left: 0px; align-content: left; margin-left: 30px; margin-right: 0px; padding-right: 0px;"> -->
                         <h1 class="title1" style="text-align: right; color:#352438; float: left; width:80%; font-size: 90px; padding-right: 0px; margin-right: 0px; animation: none; padding-top: 0px; text-decoration: bold;">-Reviews</h1>
         
-                <!-- </div> -->
+          
+                </div> -->
+
+
+
+            <div style="width: 100%; margin-left: 0px; display: flex; background-color: #e8dab2; display: inline-block;"> 
+                <div style="padding-top: 50px; padding-bottom:50px; margin-left: 10px; width: 100%; align-content: left; margin-left: 100px; float: left; box-sizing: border-box; color: #352438; display: flex">
+                    <p style="font-family: 'Darker Grotesque'; font-size: 25px; text-align: left; margin-left: 30px; width: 20%; margin-bottom: 30px;"> "Super engaging and interactive- walked away learning a lot. Will definitely think about what I learnt when using AI in the future."</p>
+                    
+                    <p style="font-family: 'Darker Grotesque'; font-size: 25px; text-align: left; margin-left: 12px; width: 20%; margin-right: 0px; margin-bottom: 50px;"> “I really enjoyed doing the ai workshop and getting to meet like minded peers. I came out with a much better understanding of ai and also its limitations in the real world.”</p>
+
+                    <p style="font-family: 'Darker Grotesque'; font-size: 25px; text-align: left; margin-left: 12px; width: 20%; margin-bottom: 50px;"> "It was really fun and I made a lot of new friends! I would definitely recommend even if you are completely new to AI because everyone is so excited to learn."</p>
+
+                    <p style="font-family: 'Darker Grotesque'; font-size: 25px; text-align: left; margin-left: 12px; width: 20%; margin-bottom: 50px;"> "Even though I'm not interested in technology this workshop really taught me how to be prepared for the future and now I feel more prepared for my own industry to change drastically."</p>
+
                 </div>
+
+                <div style="clear: both;"></div>
+            </div>
                 
 
         </div>
@@ -235,8 +264,8 @@
             <div class="clearfix">
             
                 <div class="column">
-                    <div class="card" >
-                    <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px;">
+                    <div class="card" style="margin-left: 40px;" >
+                    <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px; ">
                         <h4 style="font-family: 'Darker Grotesque'; font-style: italic; text-align: center; margin-bottom: 20px; font-size: 30px;"><b>Responsible AI: A Policy Approach to Bias Eradication</b></h4> 
                         <p style="font-family: 'Darker Grotesque'; font-size: 20px;">As part of our aim to increase AI literacy among the youth we held “Responsible AI: A Policy Approach to Bias Eradication”, an interactive workshop under the AI Fringe (The AI Fringe is an organisation that aims to increase AI safety by bringing together diverse voices.) where we taught participants about the importance of safe AI. In this interactive session, featuring guest speaker Matheace Ramaputra, an AI Legal and Ethic Practitioner, we introduced the effects of AI biases on society, and potential ways to combat them through policy. Opening with a short presentation on AI biases and how it manifests in different sectors, our workshop was followed by an activity where groups will propose their own policies to mitigate them. There were many questions and open discussions.</p> 
                         <!-- <hr width="90%" style="margin-top: 50px; margin-bottom: 50px;color: black;"/>
@@ -246,7 +275,7 @@
                     </div>
                 </div>
 
-                <div class="column1" >
+                <div class="column1" style="width: 20%; margin-left: 60px;">
                     <div class="card1 bottom-right" style="border: none; padding-top: none; margin-top: -20px; margin-left: 10px; " >
                     <img src="icebreaker.jpg" class="card-img-top" >
                     </div>
@@ -255,7 +284,7 @@
                         <img src="matheace.jpg" class="card-img-top" >
                     </div>
                 </div>
-                <div class="column1">
+                <div class="column1" style="width: 20%; margin-left: 40px;">
                     <div class="card1 bottom-right" style="border: none; margin-top: -20px;">
                         <img src="winner.jpg" class="card-img-top" >
                     </div>
@@ -267,19 +296,19 @@
             <hr style="height: 30px; color:#352438"/>
             
             <div class="clearfix" style="margin-left: 0px;">
-                <div class="column1" style="width:30%; margin-top:-20px; height: 200px;">
+                <div class="column1" style="width:25%; margin-top:-20px; height: 200px; margin-left: 50px;">
                     <div class="card1 bottom-right" style="border: none; margin-top: -20px; margin-left: 20px;">
                         <img src="panel2.jpg" class="card-img-top" >
                     </div>
                 </div>
 
-                <div class="column1" style="width:30%; margin-top:-20px; height: 200px;">
+                <div class="column1" style="width:25%; margin-top:-20px; height: 200px; margin-left: 60px;">
                     <div class="card1 bottom-right" style="border: none; margin-top: -20px;">
                         <img src="panel3.jpg" class="card-img-top" >
                     </div>
                 </div>
                 
-                <div class="column" style="width:40%; margin-top:-50px;">
+                <div class="column" style="width:40%; margin-top:-50px; margin-left: 40px;">
                     <div class="card" style="width:93%">
                     <div class="container" style="padding-top: 50px; padding-bottom:50px;">
                         <h4 style="font-family: 'Darker Grotesque'; font-style: italic; text-align: center; margin-bottom: 20px; font-size: 30px;"><b>Truth vs Tech: Tackling Misinformation and Deepfakes</b></h4> 

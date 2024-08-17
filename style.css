@@ -20,8 +20,8 @@
 }
 
 .accordion{
-   margin: 60px auto;
-   width: 600px;
+   /* margin: 60px auto; */
+   width: 50%;
    float: left;
 }
 
@@ -37,7 +37,7 @@
 
 
 .accordion li label{
-   display: flex;
+   display: inline-block;
    align-items: center;
    padding: 10px;
    font-size: 18px;
@@ -83,6 +83,9 @@ input[type="radio"]{
 body{
     background-color: #0b1423;
     color: #e8dab2;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-x: clip !important;
 }
 
 html{
@@ -120,6 +123,20 @@ html{
     transition: 0.3s;
     width: 100%;
     background-color: #e8dab2;
+    /* margin-left: 10px; */
+    border-radius: 0px;
+    /* animation: fade-up 0.7s; */
+    color: #352438;
+}
+
+p, h4, h2, h1{
+    animation: fade-up 0.7s;
+}
+
+.card2 {
+    transition: 0.3s;
+    width: 100%;
+    background-color: #e8dab2;
     margin-left: 10px;
     border-radius: 0px;
     animation: fade-up 0.7s;
@@ -127,15 +144,15 @@ html{
 }
 .column{
     float: left;
-    width: 40%;
+    width: 50%;
     padding: 10px;
 }
 .column1{
     float: left;
-    width: 30%;
+    width: 50%;
     
-    padding: 10px;
-    padding-right: 50px;
+    /* padding: 10px;
+    padding-right: 50px; */
 }
 
 .bottom-right.inView {
@@ -185,7 +202,7 @@ img{
 
 .container {
     padding: 40px 40px;
-
+    display: inline-block;
 }
 
 
@@ -201,7 +218,7 @@ img{
     overflow-x: hidden;
     padding-top: 5px;
     font-family: 'Darker Grotesque';
-    cursor: none;
+    box-sizing: border-box;
     
 }
 
@@ -232,7 +249,7 @@ img{
 .title1{
     margin-top: 100px;
     font-family: 'Darker Grotesque'; 
-    text-align: left; margin-bottom: 20px; font-size: 120px; margin-left: 0px
+    text-align: left; margin-bottom: 20px; font-size: 120px; margin-left: 0px; width: 100%;
 }
 
 
