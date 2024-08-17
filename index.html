@@ -1,547 +1,407 @@
-<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway&family=Tajawal&display=swap" rel="stylesheet">
+<html>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway&family=Tajawal&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=PT+Serif&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
 
-<style>
-    body{
-        background-color: #2e666a;
-        color: #2e666a;
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 
-    }
-    .card {
-        transition: 0.3s;
-        width: 40%;
-        background-color: rgba(238,238,238, 0.8);
-        margin-left: 550px;
-        border-radius: 0px;
-    }
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
 
-    .bottom-right.inView {
-        opacity: 1;
-        -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
-        transform: translateY(0px) rotate(0deg) translateZ(0);
-        margin-top: 20px;
-    }
-    .inView {
-        opacity: 1;
-        -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
-        transform: translateY(0px) rotate(0deg) translateZ(0);
-        margin-top: 20px;
-    }
-    section {
-        padding:20px;
-        margin-top: 20px;
-    }
 
-    .card1 {
-        /* transition: 0.3s;
-        width: 200px;
-        height: 200px;
-        background-color: rgba(238,238,238, 0.8);
-        margin-left: 550px;
-        height:400px; */
-        transition: 0.3s;
-        width: 40%;
-        background-color: rgba(238,238,238, 0.8);
-        margin-left: 550px;
+    </head>
+    <body >
+
+        <div class="cursor-dot" data-cursor-dot></div>
+        <div class="cursor-outline" data-cursor-outline></div>
+
+        <div class="sidenav">
+            <!-- <a href="#">Home</a> -->
+            <!-- <a href="#">News + Resources</a> -->
+            <a href="#" onclick="home()" style="font-size:30px; padding-top: 3px;"><b>Youth in AI</b></a>
+            <a href="#" onclick="events()" style="padding-left: 900px; font-size: 30px;">Events    |</a>
+            <a href="#" onclick="hackathons()" style="font-size: 30px;">Hackathons    |</a>
+            <a href="#" onclick="articles()" style="font-size: 30px;">Articles    |</a>
+            <a href="#" onclick="aboutus()" style="font-size: 30px;">About Us    |</a>
+
+        </div>
+
+
+
+
+
+
+
+
+        <div id="aboutus" style="display:none">
+            
+            <div class="card" style="width: 90%; margin-left: 80px;">
+            <div class="container" style="padding-top: 50px; padding-left: 0px;padding-right:0px; padding-bottom:50px;">
+                <h4 style="font-family: 'Darker Grotesque'; text-align: center; margin-bottom: 20px; font-size: 70px; margin-left: 30px;"><b>Meet the Team</b></h4>
+                <div style="margin-bottom:150px; margin-top: 50px; width: 50%" class="column1">
+                    <img src="neha.jpg" alt="NEHA ADAPALA" style=" border:none; margin-right: 30px; float: left; width: 300px;" class="card">
+                    <h4 style="font-family: 'Darker Grotesque'; font-style: italic; text-align: center; margin-bottom: 20px; font-size: 30px; margin-left: 30px;"><b>Neha Adapala</b></h4>
+                    <p style="font-family: 'Darker Grotesque'; font-size: 20px; text-align: center; margin-left: 30px;"> Neha is a Year 13 student who hopes to study Computer Science at university. She is interested in Artificial Intelligence, neurotechnology, femtech, and art.</p>
+                </div>
+                <div  style="margin-bottom:150px; margin-top: 50px; width: 50%; margin-left: 0px; "  class="column1">
+                    <img src="elo.jpg" alt="ELO Esalomi" style=" border:none; margin-right: 30px; float: left; width: 300px; height: 300px;" class="card">
+                    <h4 style="font-family: 'Darker Grotesque'; font-style: italic; text-align: center; margin-bottom: 20px; font-size: 30px; margin-left: 10px;"><b>Elo Esalomi</b></h4>
+                    <p style="font-family: 'Darker Grotesque'; font-size: 20px; text-align: center; margin-left: 10px;"> Elo is a student at the University of Pennsylvania, studying Computer Science. She is interested in Artificial Intelligence, policy, and music. </p>
+                </div>
+            
+            
+            </div>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div id="home" style="margin-bottom: 500px;padding-bottom: 0px;">
+            <div style="width: 100%; margin-left: 0px;">
+                <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px; margin-left: 0px; width: 100%; align-content: left; margin-left: 30px; height: 570px; color: #e8dab2;">
+
+                    <h1 class="title1" style="padding-bottom: 0px; ">Y o u t h _ i n _ A I</h1>
+                    <h2 class="title1" style="font-size: 50px; margin-top: 0px;">Don't wait for tomorrow's tech - make it.</h1>
+                    <p style="font-family: 'Darker Grotesque'; font-size: 25px; text-align: left; margin-left: 0px; width: 900px;"> We aim to improve AI literacy among underrepresented UK youth through free hackathons. Our events include educational seminars, project building, and extra resources.</p>
+                </div>
+            </div>
+
+
+            <div class="card" style="margin-left: 0px;float:left; width: 50%; border: none; animation: none; margin-bottom: 70px; ">
+                <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px; margin-left: 0px; align-content: left; margin-left: 30px; ">
+                    <p style="font-family: 'Darker Grotesque'; font-size: 30px; text-align: left; margin-left: 0px;">Hackathons</p>
+                    <p style="font-family: 'Darker Grotesque'; font-size: 20px; text-align: left; margin-left: 0px; ">Hackathons are really exciting events where you and some teammates work together to brainstorm ideas and for some, bring them to life. You can attend on your own as you are encouraged to meet new people and form new relationships over the course of the hackathon. However, feel free to come with a friend- it can seem intimidating at first so knowing someone makes the experience much easier. </p>
+                    <p style="font-family: 'Darker Grotesque'; font-size: 20px; text-align: left; margin-left: 0px; ">You will essentially spend the day brainstorming different ideas and creating projects that solve real problems.</p>
+                    <p style="font-family: 'Darker Grotesque'; font-size: 20px; text-align: left; margin-left: 0px; ">Our hackathons include a technical and non-technical track. Those who have previous coding experience may wish to take part in the technical track where they work to bring the idea to reality. Teams can also choose the non-technical track if they have no coding experience where they have to brainstorm an idea and create different items to present their work (e.g. an essay, a presentation, a one-pager).</p>
+                </div>
+                </div>
+                <div class="card" style="margin-left: 0px;float:left; width: 860px; padding-right: 100px; margin-right: 0px; border: none; height: 417.5px; animation: none; margin-bottom: 70px; padding-top: 70px; padding-left: 20px; height: 569px;">
+                    <!-- <div class="container" style="margin-left: 0px; align-content: left; margin-left: 30px; margin-right: 0px; padding-right: 0px;"> -->
+                        <p style="font-family: 'Darker Grotesque'; font-size: 30px; text-align: left; margin-left: 0px; ">Educational seminars </p>
+                <p style="font-family: 'Darker Grotesque'; font-size: 20px; text-align: left; margin-left: 0px;">We start each hackathon by teaching you different concepts, either technical or based around a problem that AI systems face. The prompt for the hackathon will be based on the information from the seminar, so it’s a paramount part of the day that you won’t want to miss! </p>
+                <p style="font-family: 'Darker Grotesque'; font-size: 30px; text-align: left; margin-left: 0px;">Extra resources </p>
+                <p style="font-family: 'Darker Grotesque'; font-size: 20px; text-align: left; margin-left: 0px;">Ultimately, our goal is to increase AI literacy and unfortunately, we cannot thoroughly do that in just one day. That is why we will provide access to extra resources you can research in your free time. These might give you ideas for the next hackathon, or they can blossom into ideas of your own! Whatever it may be, we strongly recommend that you take a look at them.                 </p>
         
-        -webkit-transform: translateY(50px) rotate(-5deg) translateZ(0);
-        transform: translateY(50px) rotate(-5deg) translateZ(0);
-        -webkit-transition-delay: .9s;
-        -o-transition-delay: .9s;
-        transition-delay: .9s;
-        -webkit-transition: 1s;
-        -o-transition: 1s;
-        transition: 1s;
-        opacity: 0;
-    }
-    img{
-        object-fit: cover;
-    }
-
-    .container {
-        padding: 40px 40px;
-
-    }
+                <!-- </div> -->
+                </div>
 
 
-    .sidenav {
-        height: 100%;
-        width: 300px;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        overflow-x: hidden;
-        padding-top: 50px;
-        font-family: 'Darker Grotesque';
 
+            <div  style="height: 1230px;" >
+            <h4 style="font-family: 'Darker Grotesque'; text-align: center; margin-bottom: 0px; margin-top: 100px; font-size: 70px; margin-left: 30px; color:#e8dab2;"><b>FAQ</b></h4>
+                <ul class="accordion" style="margin-left: 200px;">
+                   <li>
+                       <input type="radio" name="accordion" id="first">
+                       <label for="first" style="font-family: 'Darker Grotesque'; font-size: 30px; margin-left: 30px; text-decoration: italic; color:#e8dab2;">Who is eligible to compete in our hackathons?</label>
+                       <div class="content">
+                           <p style="font-family: 'Darker Grotesque'; font-size: 20px; margin-left: 30px; color:#e8dab2;">Our hackathons are aimed at underrepresented youth in the UK. You can read our eligibility requirements under the Hackathon tab.</p>
+                       </div>
+      
+                       <input type="radio" name="accordion" id="second" checked>
+                       <label for="second" style="font-family: 'Darker Grotesque'; font-size: 30px; margin-left: 30px; text-decoration: italic; color:#e8dab2;" >Do we need to know coding?</label>
+                       <div class="content">
+                           <p style="font-family: 'Darker Grotesque'; font-size: 20px; margin-left: 30px; color:#e8dab2;">No! All levels of coders are welcomed, especially beginners! There will be a technical and non-technical track. You are also encouraged to meet your team members at the venue, so having a wide skill set in your team would be very useful</p>
+                       </div>
+                    </li>
+                </ul>
+                <ul class="accordion">
+                    <li>
+                       <input type="radio" name="accordion" id="third">
+                       <label for="third" style="font-family: 'Darker Grotesque'; font-size: 30px; margin-left: 30px; text-decoration: italic; color:#e8dab2;">What if we do not have our own personal laptop?</label>
+                       <div class="content">
+                           <p style="font-family: 'Darker Grotesque'; font-size: 20px; margin-left: 30px; color:#e8dab2;">Contact us and we will try to sort something out for you. Please come along even if you don’t have a personal computer as your ideas will be valuable. Also see if any of your friends are willing to let you borrow their computer. </p>
+                       </div>
+      
+                       <input type="radio" name="accordion" id="fourth">
+                       <label for="fourth" style="font-family: 'Darker Grotesque'; font-size: 30px; margin-left: 30px; text-decoration: italic; color:#e8dab2;">What counts as "underrepresented"?</label>
+                       <div class="content">
+                           <p style="font-family: 'Darker Grotesque'; font-size: 20px; margin-left: 30px; color:#e8dab2;">Please read the eligibility section under the Hackathons tab</p>
+                       </div>
+      
+      
+                   </li>
+               </ul>
+               </div>
+
+               <div class="card" style="margin-left: 0px;float:left; width: 60%; border: none; animation: none; margin-bottom: 70px; ">
+                <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px; margin-left: 0px; align-content: left; margin-left: 30px; ">
+                    <p style="font-family: 'Darker Grotesque'; font-size: 25px; text-align: left; margin-left: 0px; width: 900px; margin-bottom: 30px;"> "Super engaging and interactive- walked away learning a lot"</p>
+                    
+                    <p style="font-family: 'Darker Grotesque'; font-size: 25px; text-align: left; margin-left: 0px; width: 900px; margin-right: 0px; margin-bottom: 50px;"> "Even though I'm not interested in technology this workshop really taught me how to be prepared for the future and now I feel more prepared for my own industry to change drastically."</p>
+
+                    <p style="font-family: 'Darker Grotesque'; font-size: 25px; text-align: left; margin-left: 0px; width: 900px; margin-bottom: 50px;"> "It was really fun and I made a lot of new friends! I would definitely recommend even if you are completely new to AI because everyone is so excited to learn."</p>
+
+                </div>
+                </div>
+                <div class="card" style="margin-left: 0px;float:left; width: 690px; padding-right: 0px; margin-right: 0px; border: none; height: 417.5px; animation: none; margin-bottom: 70px;">
+                    <!-- <div class="container" style="margin-left: 0px; align-content: left; margin-left: 30px; margin-right: 0px; padding-right: 0px;"> -->
+                        <h1 class="title1" style="text-align: right; color:#352438; float: left; width:80%; font-size: 90px; padding-right: 0px; margin-right: 0px; animation: none; padding-top: 0px; text-decoration: bold;">-Reviews</h1>
         
-    }
+                <!-- </div> -->
+                </div>
+                
 
-    .sidenav a {
-        padding: 6px 6px 6px 32px;
-        text-decoration: none;
-        text-align: right;
-        font-size: 25px;
-        color: #eeeeee; 
-        display: block;
-        font-size:medium;
-    }
-
-    .sidenav a:hover {
-        color: #0c343d;
-    }
-
-    @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-    }
-
-    .image{
-        margin-left: 1000px;
-    }
-    #workshops{
-        display: none;
-    }
+        </div>
 
 
-</style>
-</head>
-<body>
 
-<div class="sidenav">
-    <a href="#">Home</a>
-    <a href="#">About Us</a>
-    <a href="#">How to Get Involved</a>
-    <a href="#">News + Resources</a>
-    <a href="#" onclick="workshops()">Workshops</a>
-    <a href="#" onclick="events()">Events</a>
-</div>
 
-<div id="workshops">
-<h2>Workshops</h2>
 
-<div class="card" >
-  <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px;">
-    <h4 style="font-family: 'PT Serif'; text-align: center; margin-bottom: 20px;"><b>Responsible AI: A Policy Approach to Bias Eradication</b></h4> 
-    <p style="font-family: 'Darker Grotesque'; font-size:small;">As part of our aim to increase AI literacy among the youth we held “Responsible AI: A Policy Approach to Bias Eradication”, an interactive workshop under the AI Fringe where we taught participants about the importance of safe AI. In this interactive session, featuring guest speaker Matheace Ramautra, an AI Legal and Ethic Practitioner, we introduced the effects of AI biases on society, and potential ways to combat them through policy. Opening with a short presentation on AI biases and how it manifests in different sectors, our workshop was followed by an activity where groups will propose their own policies to mitigate them. There were many questions and open discussions.</p> 
-  </div>
-</div>
 
-<div >
-    
-    <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
-      <img src="icebreaker.jpg" class="card-img-top" >
-    </div>
-    
-    <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
-        <img src="winner.jpg" class="card-img-top" >
-    </div>
-    <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
-        <img src="matheace.jpg" class="card-img-top" >
-    </div>
-    <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
-        <img src="activity.jpg" class="card-img-top">
-      </div>
-  </div>
 
-</div>
 
-<div id="events">
 
-<h2>Events </h2>
 
-<div class="card">
-  <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px;">
-    <h4 style="font-family: 'PT Serif'; text-align: center; margin-bottom: 20px;"><b>Truth vs Tech: Tackling Misinformation and Deepfakes</b></h4> 
-    <p style="font-family: 'Darker Grotesque'; font-size:small;">At the AI and Society Forum, we spoke at the AI and Society Forum on the panel “Truth vs Tech: Tackling Misinformation and Deepfakes”. The event held over 240 people and it was uplifting seeing so many people interested in our talk, despite being the youngest speakers and attendees of the event. Throughout the day, we heard talks from many people experienced in the field, from Abeba Birhane to Dr Maya Indira. </p> 
-  </div>
-</div>
+        <div id="hackathons" style="display:none">
+            <div class="card" style="width: 100%; margin-left: 0px;">
+                <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px; margin-left: 0px; width: 100%; align-content: left; margin-left: 30px; ">
+
+                    <h1 style="font-family: 'Darker Grotesque'; text-align: left; margin-bottom: 20px; font-size: 120px; margin-left: 0px">Coming soon...</h1>
+                    <p style="font-family: 'Darker Grotesque'; font-size: 25px; text-align: left; margin-left: 0px; width: 900px;"> If you would like to be a volunteer at Youth in AI (no eligibility requirements) please contact us at youthinai@gmail.com</p>
+                </div>
+            </div>
+
+          
+                <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px; margin-left: 0px; align-content: left; margin-left: 30px; color: #d7d9ce;">
+                    <p style="font-family: 'Darker Grotesque'; font-size: 50px; text-align: left; margin-left: 0px;"> Eligibility requirements for hackathon participants</p>
+                    <p style="font-family: 'Darker Grotesque'; font-size: 30px; text-align: left; margin-left: 0px;">Ages 11-18 years old</p>
+                    <p style="font-family: 'Darker Grotesque'; font-size: 20px; text-align: left; margin-left: 0px; ">You must be between these ages to compete in the hackathon. If you would like to take part in helping this organisation’s aim, you can become a volunteer to help out at the hackathons or develop resources. Please contact us at youthinai@gmail.com. </p>
+                    <p style="font-family: 'Darker Grotesque'; font-size: 30px; text-align: left; margin-left: 0px; ">UK resident </p>
+                    <p style="font-family: 'Darker Grotesque'; font-size: 20px; text-align: left; margin-left: 0px;">You must be a UK resident to take part in this hackathon. Many of the hackathons will happen in-person in the UK. </p>
+                    <p style="font-family: 'Darker Grotesque'; font-size: 30px; text-align: left; margin-left: 0px;">Underrepresented </p>
+                    <p>
+                        <ul>
+                            <li style="font-family: 'Darker Grotesque'; font-size: 20px; text-align: left; margin-left: 0px; width: 900px; margin-bottom: 20px;">Ethnic minorities - BAME minorities/ Roma and Traveller communities</li>
+                            <li style="font-family: 'Darker Grotesque'; font-size: 20px; text-align: left; margin-left: 0px; width: 900px; margin-bottom: 20px;">Females</li>
+                            <li style="font-family: 'Darker Grotesque'; font-size: 20px; text-align: left; margin-left: 0px; width: 900px; margin-bottom: 20px;">People with disabilities - If your disability is physical please contact us before the event so we can organise access arrangements to the venue</li>
+                            <li style="font-family: 'Darker Grotesque'; font-size: 20px; text-align: left; margin-left: 0px; width: 900px; margin-bottom: 20px;">LGBTQ+ community</li>
+                            <li style="font-family: 'Darker Grotesque'; font-size: 20px; text-align: left; margin-left: 0px; width: 900px; margin-bottom: 20px;">Neurodiverse individuals</li>
+                            <li style="font-family: 'Darker Grotesque'; font-size: 20px; text-align: left; margin-left: 0px; width: 900px; margin-bottom: 20px;">Young carers</li>
+                            <li style="font-family: 'Darker Grotesque'; font-size: 20px; text-align: left; margin-left: 0px; width: 900px; margin-bottom: 20px;">Indices of Multiple Deprivation (IMD) – If your home postcode is within an area that is ranked in the bottom 40% of their region by the IMD.</li>
+                        </ul>
+                    </p>
+                </div>
+ 
+        </div>
+
+
+
+
+        <div id="articles" style="margin-bottom: 150px; display:none">
+            <div class="card" style="width: 100%; margin-left: 0px;">
+                <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px; margin-left: 0px; width: 100%; align-content: left; margin-left: 30px; float: left; width: 50%">
+
+                    <h1 style="font-family: 'Darker Grotesque'; text-align: left; margin-bottom: 20px; font-size: 120px; margin-left: 0px; ">Coming soon...</h1>
+                    <p style="font-family: 'Darker Grotesque'; font-size: 25px; text-align: left; margin-left: 0px; width: 900px;"> If you would like to write an article for Youth in AI (no eligibility requirements) please contact us at youthinai@gmail.com</p>
+                </div>
+                <div class="container" style="font-family: 'Darker Grotesque'; font-size: 25px; text-align: left; width: 900px; margin-left: 50px; float: left; width: 50%">
+                    <h4 style="font-family: 'Darker Grotesque'; font-style: italic; text-align: left; margin-bottom: 20px; font-size: 30px;"><b>COMING UP: Intersections of AI with:</b></h4> 
+                    <p style="float: left; padding-right: 10px;">Medicine | </p>
+                    <p style="float: left; padding-right: 10px;"> Music | </p>
+                    <p style="float: left;padding-right: 10px;"> Environmental Science | </p>
+                    <p style="float: left; padding-right: 10px;"> Classics | </p>
+                    <p style="float: left; padding-right: 10px;"> Dentistry | </p>
+                    <p style="float: left; padding-right: 10px;"> Physics | </p>
+                    <p style="float: left; padding-right: 10px;"> History  </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div id="events" style="display:none" >
+            <div class="clearfix">
+            
+                <div class="column">
+                    <div class="card" >
+                    <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px;">
+                        <h4 style="font-family: 'Darker Grotesque'; font-style: italic; text-align: center; margin-bottom: 20px; font-size: 30px;"><b>Responsible AI: A Policy Approach to Bias Eradication</b></h4> 
+                        <p style="font-family: 'Darker Grotesque'; font-size: 20px;">As part of our aim to increase AI literacy among the youth we held “Responsible AI: A Policy Approach to Bias Eradication”, an interactive workshop under the AI Fringe (The AI Fringe is an organisation that aims to increase AI safety by bringing together diverse voices.) where we taught participants about the importance of safe AI. In this interactive session, featuring guest speaker Matheace Ramaputra, an AI Legal and Ethic Practitioner, we introduced the effects of AI biases on society, and potential ways to combat them through policy. Opening with a short presentation on AI biases and how it manifests in different sectors, our workshop was followed by an activity where groups will propose their own policies to mitigate them. There were many questions and open discussions.</p> 
+                        <!-- <hr width="90%" style="margin-top: 50px; margin-bottom: 50px;color: black;"/>
+                        <p style="font-family: 'Darker Grotesque'; font-size: 20px;">The AI Fringe is an organisation that aims to increase AI safety by bringing together diverse voices. By educating the youth on AI and the opportunities and risks that came along with it, we hope to diversify the voices that can make changes in this field.</p> -->
+                        
+                    </div>
+                    </div>
+                </div>
+
+                <div class="column1" >
+                    <div class="card1 bottom-right" style="border: none; padding-top: none; margin-top: -20px; margin-left: 10px; " >
+                    <img src="icebreaker.jpg" class="card-img-top" >
+                    </div>
+
+                    <div class="card1 bottom-right" style="border: none; margin-top: 20px; margin-left: 10px; ">
+                        <img src="matheace.jpg" class="card-img-top" >
+                    </div>
+                </div>
+                <div class="column1">
+                    <div class="card1 bottom-right" style="border: none; margin-top: -20px;">
+                        <img src="winner.jpg" class="card-img-top" >
+                    </div>
+                    <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
+                        <img src="activity.jpg" class="card-img-top">
+                    </div>
+                </div>
+            </div>
+            <hr style="height: 30px; color:#352438"/>
+            
+            <div class="clearfix" style="margin-left: 0px;">
+                <div class="column1" style="width:30%; margin-top:-20px; height: 200px;">
+                    <div class="card1 bottom-right" style="border: none; margin-top: -20px; margin-left: 20px;">
+                        <img src="panel2.jpg" class="card-img-top" >
+                    </div>
+                </div>
+
+                <div class="column1" style="width:30%; margin-top:-20px; height: 200px;">
+                    <div class="card1 bottom-right" style="border: none; margin-top: -20px;">
+                        <img src="panel3.jpg" class="card-img-top" >
+                    </div>
+                </div>
+                
+                <div class="column" style="width:40%; margin-top:-50px;">
+                    <div class="card" style="width:93%">
+                    <div class="container" style="padding-top: 50px; padding-bottom:50px;">
+                        <h4 style="font-family: 'Darker Grotesque'; font-style: italic; text-align: center; margin-bottom: 20px; font-size: 30px;"><b>Truth vs Tech: Tackling Misinformation and Deepfakes</b></h4> 
+                        <p style="font-family: 'Darker Grotesque'; font-size: 20px;">At the AI and Society Forum, we spoke at the AI and Society Forum on the panel “Truth vs Tech: Tackling Misinformation and Deepfakes”. The event held over 240 people and it was uplifting seeing so many people interested in our talk, despite being the youngest speakers and attendees of the event. Throughout the day, we heard talks from many people experienced in the field, from Abeba Birhane to Dr Maya Indira. </p> 
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <!-- <div class="column1" style="width:20%; height: 200px;">
+                    <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
+                        <img src="panel1.jpg" class="card-img-top" >
+                    </div>
+                </div> -->
+                
+            
+            </div>
+            </div>
+        </div>
+
+        <div id="footer" >
+            <div class="foot-text" style="float: left;">
+                <h4 style="text-align: left; margin-bottom: 10px; margin-left: 30px;"><b>"Whether AI will help us reach our aspirations or reinforce the unjust inequalities is ultimately up to us."</b></h4> 
+                <p style="margin-left: 30px; font-family: 'Darker Grotesque';">-Joy Buolamwini</p>
+            </div>
+            <div class="foot-text" style="float: right;">
+                <p style="font-family: 'Darker Grotesque'; font-size:20px; text-align: right; margin-right: 30px; margin-top: 10px;">Contact Us</p>
+                <p style="font-family: 'Darker Grotesque'; font-size:20px; text-align: right; margin-right: 30px;">Instagram: @youthinai</p>
+                <p style="font-family: 'Darker Grotesque'; font-size:20px; text-align: right; margin-right: 30px;">X: @youth_in_ai</p>
+                <p style="font-family: 'Darker Grotesque'; font-size:20px; text-align: right; margin-right: 30px;">Email: youthinaiofficial@gmail.com</p>
+            </div>
+        </div>
+
+    </body>
   
-  <div >
-      
-      <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
-        <img src="panel1.jpg" class="card-img-top" >
-      </div>
-      
-      <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
-          <img src="panel2.jpg" class="card-img-top" >
-      </div>
-      <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
-          <img src="panel3.jpg" class="card-img-top" >
-      </div>
-    </div>
-  
-  </div>
+</html>
 
-</div>
-
-</body>
 <script>
-    let elementsArray = document.querySelectorAll(".card1");
-    console.log(elementsArray);
-    window.addEventListener('scroll', fadeIn ); 
-    function fadeIn() {
-        for (var i = 0; i < elementsArray.length; i++) {
-            var elem = elementsArray[i]
-            var distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
-            if (distInView < 0) {
-                elem.classList.add("inView");
-            } else {
-                elem.classList.remove("inView");
-            }
+
+const cursorDot = document.querySelector("[data-cursor-dot]");
+const cursorOutline = document.querySelector("[data-cursor-outline]")
+
+window.addEventListener("mousemove", function (e){
+    const posX = e.clientX;
+    const posY = e.clientY;
+
+    cursorDot.style.left = `${posX}px`;
+    cursorDot.style.top = `${posY}px`;
+
+    // cursorOutline.style.left = '${posX}px';
+    // cursorOutline.style.top = '${posY}px';
+
+    cursorOutline.animate({
+        left:`${posX}px`,
+        top: `${posY}px`,
+    }, {duration: 500, fill: "forwards"});
+})
+
+let elementsArray = document.querySelectorAll(".card1");
+console.log(elementsArray);
+window.addEventListener('scroll', fadeIn ); 
+function fadeIn() {
+    for (var i = 0; i < elementsArray.length; i++) {
+        var elem = elementsArray[i]
+        var distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
+        if (distInView < 0) {
+            elem.classList.add("inView");
+        } else {
+            elem.classList.remove("inView");
         }
     }
-    fadeIn();
-
-    function workshops(){
-        document.getElementById('events').style.display='none';
-        document.getElementById('workshops').style.display='block';
-    }
-    function events(){
-        document.getElementById('workshops').style.display='none';
-        document.getElementById('events').style.display='block';
-    }
-</script> -->
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway&family=Tajawal&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=PT+Serif&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
-
-<style>
-    body{
-        background-color: #2e666a;
-        color: #2e666a;
-
-    }
-    .card {
-        transition: 0.3s;
-        width: 40%;
-        background-color: rgba(238,238,238, 0.8);
-        margin-left: 550px;
-        border-radius: 0px;
-    }
-
-    .bottom-right.inView {
-        opacity: 1;
-        -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
-        transform: translateY(0px) rotate(0deg) translateZ(0);
-        margin-top: 20px;
-    }
-    .inView {
-        opacity: 1;
-        -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
-        transform: translateY(0px) rotate(0deg) translateZ(0);
-        margin-top: 20px;
-    }
-    section {
-        padding:20px;
-        margin-top: 20px;
-    }
-
-    .card1 {
-        /* transition: 0.3s;
-        width: 200px;
-        height: 200px;
-        background-color: rgba(238,238,238, 0.8);
-        margin-left: 550px;
-        height:400px; */
-        transition: 0.3s;
-        width: 40%;
-        background-color: rgba(238,238,238, 0.8);
-        margin-left: 550px;
-        
-        -webkit-transform: translateY(50px) rotate(-5deg) translateZ(0);
-        transform: translateY(50px) rotate(-5deg) translateZ(0);
-        -webkit-transition-delay: .9s;
-        -o-transition-delay: .9s;
-        transition-delay: .9s;
-        -webkit-transition: 1s;
-        -o-transition: 1s;
-        transition: 1s;
-        opacity: 0;
-    }
-    img{
-        object-fit: cover;
-    }
-
-    .container {
-        padding: 40px 40px;
-
-    }
+}
+fadeIn();
 
 
-    .sidenav {
-        height: 100%;
-        width: 300px;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        overflow-x: hidden;
-        padding-top: 50px;
-        font-family: 'Darker Grotesque';
-
-        
-    }
-
-    .sidenav a {
-        padding: 6px 6px 6px 32px;
-        text-decoration: none;
-        text-align: right;
-        font-size: 25px;
-        color: #eeeeee; 
-        display: block;
-        font-size:medium;
-    }
-
-    .sidenav a:hover {
-        color: #0c343d;
-    }
-
-    @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-    }
-
-    .image{
-        margin-left: 1000px;
-    }
-    #workshops{
-        display: block;
-        margin-bottom: 250px;
-    }
-    #howtogetinvolved{
-        display: block;
-        margin-bottom: 250px;
-    }
-    #aboutus{
-        display: block;
-        margin-bottom: 250px;
-    }
-    #events{
-        display:block;
-        margin-bottom: 250px;
-    }
-    .footer {
-        width: 100%;
-        height: 200px;
-        background-color: rgba(238,238,238, 1);
-        color: #2e666a;
-        text-align: left;
-        padding-top: 30px;
-        margin-top: 50px;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 5;
-        position: fixed;
-    }   
-    .foot-text {
-        width: 50%;
-    }
-
-
-
-</style>
-</head>
-<body>
-
-<div class="sidenav">
+function hackathons(){
+    document.getElementById('events').style.display='none';
+    document.getElementById('hackathons').style.display='block';
+    document.getElementById('home').style.display='none';
+    document.getElementById('articles').style.display='none';
+    document.getElementById('aboutus').style.display='none';
+}
+function events(){
     
-    <img src="transparent_yia.PNG" alt="Youth in AI Logo" style=" border:none; width: 300px; height: 90px;margin-left: 60px;">
-    <a href="#" onclick="home()">Home</a>
-    <a href="#" onclick="aboutus()">About Us</a>
-    <a href="#"onclick="howtogetinvolved()">How to Get Involved</a>
-    <!-- <a href="#">News + Resources</a> -->
-    <a href="#" onclick="workshops()">Workshops</a>
-    <a href="#" onclick="events()">Events</a>
-</div>
+    document.getElementById('hackathons').style.display='none';
+    document.getElementById('events').style.display='block';
+    document.getElementById('home').style.display='none';
+    document.getElementById('articles').style.display='none';
+    document.getElementById('aboutus').style.display='none';
+}
 
-<div id="aboutus">
-    <h2>About Us</h2>
-    
-    <div class="card" >
-      <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px;">
-        <h4 style="font-family: 'PT Serif'; text-align: center; margin-bottom: 20px;"><b>Our Aim</b></h4> 
-        <p style="font-family: 'Darker Grotesque'; font-size:small;">  We are a youth group aiming to increase AI literacy based in London, UK. As AI continues to be implemented in our daily lives and industry sectors across the world, it is important that the next generation, who will be one of the first to experience the impacts of AI in the workplace, understand its benefits, flaws, and how best to combat future problems. We aim to create immersive, educational (and fun!) workshops and sessions for 10-18-year-olds across the UK, hosted by fellow young people, to raise awareness about AI. </p>
-        <h4 style="font-family: 'PT Serif'; text-align: center; margin-bottom: 20px;"><b>Meet the Team</b></h4>
-        <div style="margin-bottom:150px; margin-top: 50px;">
-            <img src="neha.jpg" alt="NEHA ADAPALA" style=" border:none; margin-right: 30px; float: left; width: 200px;">
-            <h4 style="font-family: 'PT Serif'; text-align: center; margin-bottom: 20px; "><b>Neha Adapala</b></h4>
-            <p style="font-family: 'Darker Grotesque'; font-size:small;"> Neha is a Year 12 student who hopes to study Computer Science at university. She is interested in Artificial Intelligence, neurotechnology and femtech, and art.</p>
-        </div>
-        <div>
-            <img src="elo.jpg" alt="ELO Esalomi" style=" border:none; margin-right: 30px; float: left; width: 200px; height: 200px;">
-            <h4 style="font-family: 'PT Serif'; text-align: center; margin-bottom: 20px; "><b>Elo Esalomi</b></h4>
-            <p style="font-family: 'Darker Grotesque'; font-size:small;"> Elo is a Year 13 student who hopes to study Computer Science at university. She is interested in Artificial Intelligence, policy, and music. </p>
-        </div>
-      
-      
-    </div>
-</div>
-</div>
+function home(){
+    document.getElementById('home').style.display='block';
+    document.getElementById('events').style.display='none';
+    document.getElementById('hackathons').style.display='none';
+    document.getElementById('articles').style.display='none';
+    document.getElementById('aboutus').style.display='none';
+}
 
-<div id="howtogetinvolved">
+function aboutus(){
+    document.getElementById('home').style.display='none';
+    document.getElementById('events').style.display='none';
+    document.getElementById('hackathons').style.display='none';
+    document.getElementById('articles').style.display='none';
+    document.getElementById('aboutus').style.display='block';
+}
 
-    <h2>How to Get Involved</h2>
-    
-    <div class="card">
-        <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px;">
-            <h4 style="font-family: 'PT Serif'; text-align: center; margin-bottom: 20px;"><b>Contact Us</b></h5>
-            <h5 style="font-family: 'PT Serif'; text-align: left; margin-bottom: 15px;"><b>Email</b></h5>
-            <p style="font-family: 'Darker Grotesque'; font-size:small;"> youthinai.official@gmail.com </p>
-            <h5 style="font-family: 'PT Serif'; text-align: left; margin-bottom: 15px;"><b>Instagram</b></h5>
-            <p style="font-family: 'Darker Grotesque'; font-size:small;"> @youthinai </p>
-            <h5 style="font-family: 'PT Serif'; text-align: left; margin-bottom: 15px;"><b>X</b></h5>
-            <p style="font-family: 'Darker Grotesque'; font-size:small;"> @youth_in_ai </p>
-        </div>
-        </div>
-    </div>
+function articles(){
+    document.getElementById('home').style.display='none';
+    document.getElementById('events').style.display='none';
+    document.getElementById('hackathons').style.display='none';
+    document.getElementById('articles').style.display='block';
+    document.getElementById('aboutus').style.display='none';
+}
+
+// function load(){
+//     document.getElementById('home').style.display='none';
+//     document.getElementById('events').style.display='none';
+//     document.getElementById('hackathons').style.display='none';
+//     document.getElementById('articles').style.display='none';
+//     document.getElementById('aboutus').style.display='block';
+// }
 
 
-<div id="workshops">
-<h2>Workshops</h2>
-
-<div class="card" >
-  <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px;">
-    <h4 style="font-family: 'PT Serif'; text-align: center; margin-bottom: 20px;"><b>Responsible AI: A Policy Approach to Bias Eradication</b></h4> 
-    <p style="font-family: 'Darker Grotesque'; font-size:small;">As part of our aim to increase AI literacy among the youth we held “Responsible AI: A Policy Approach to Bias Eradication”, an interactive workshop under the AI Fringe where we taught participants about the importance of safe AI. In this interactive session, featuring guest speaker Matheace Ramautra, an AI Legal and Ethic Practitioner, we introduced the effects of AI biases on society, and potential ways to combat them through policy. Opening with a short presentation on AI biases and how it manifests in different sectors, our workshop was followed by an activity where groups will propose their own policies to mitigate them. There were many questions and open discussions.</p> 
-  </div>
-</div>
-
-<div >
-    
-    <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
-      <img src="icebreaker.jpg" class="card-img-top" >
-    </div>
-    
-    <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
-        <img src="winner.jpg" class="card-img-top" >
-    </div>
-    <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
-        <img src="matheace.jpg" class="card-img-top" >
-    </div>
-    <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
-        <img src="activity.jpg" class="card-img-top">
-      </div>
-  </div>
-
-</div>
-
-<div id="events">
-
-<h2>Events </h2>
-
-<div class="card">
-  <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px;">
-    <h4 style="font-family: 'PT Serif'; text-align: center; margin-bottom: 20px;"><b>Truth vs Tech: Tackling Misinformation and Deepfakes</b></h4> 
-    <p style="font-family: 'Darker Grotesque'; font-size:small;">At the AI and Society Forum, we spoke at the AI and Society Forum on the panel “Truth vs Tech: Tackling Misinformation and Deepfakes”. The event held over 240 people and it was uplifting seeing so many people interested in our talk, despite being the youngest speakers and attendees of the event. Throughout the day, we heard talks from many people experienced in the field, from Abeba Birhane to Dr Maya Indira. </p> 
-  </div>
-</div>
-  
-  <div >
-      
-      <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
-        <img src="panel1.jpg" class="card-img-top" >
-      </div>
-      
-      <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
-          <img src="panel2.jpg" class="card-img-top" >
-      </div>
-      <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
-          <img src="panel3.jpg" class="card-img-top" >
-      </div>
-    </div>
-  
-  </div>
-
-</div>
-
-<div class="footer">
-    <div class="foot-text" style="float: left;">
-        <h4 style="font-family: 'PT Serif'; text-align: left; margin-bottom: 20px; margin-left: 30px;"><b>"Whether AI will help us reach our aspirations or reinforce the unjust inequalities is ultimately up to us."</b></h4> 
-        <p style="margin-left: 30px; font-family: 'PT Serif';">-Joy Buolamwini</p>
-    </div>
-    <div class="foot-text" style="float: right;">
-        <p style="font-family: 'Darker Grotesque'; font-size:small; text-align: right; margin-right: 30px;">Contact Us</p>
-        <p style="font-family: 'Darker Grotesque'; font-size:small; text-align: right; margin-right: 30px;">Instagram: @youthinai</p>
-        <p style="font-family: 'Darker Grotesque'; font-size:small; text-align: right; margin-right: 30px;">X: @youth_in_ai</p>
-        <p style="font-family: 'Darker Grotesque'; font-size:small; text-align: right; margin-right: 30px;">Email: youthinaiofficial@gmail.com</p>
-    </div>
-</div>
-
-</body>
-<script>
-    let elementsArray = document.querySelectorAll(".card1");
-    console.log(elementsArray);
-    window.addEventListener('scroll', fadeIn ); 
-    function fadeIn() {
-        for (var i = 0; i < elementsArray.length; i++) {
-            var elem = elementsArray[i]
-            var distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
-            if (distInView < 0) {
-                elem.classList.add("inView");
-            } else {
-                elem.classList.remove("inView");
-            }
-        }
-    }
-    fadeIn();
-
-    function workshops(){
-        document.getElementById('events').style.display='none';
-        document.getElementById('workshops').style.display='block';
-        document.getElementById('howtogetinvolved').style.display='none';
-        document.getElementById('aboutus').style.display='none';
-    }
-    function home(){
-        document.getElementById('events').style.display='block';
-        document.getElementById('workshops').style.display='block';
-        document.getElementById('howtogetinvolved').style.display='block';
-        document.getElementById('aboutus').style.display='block';
-    }
-    function events(){
-        document.getElementById('workshops').style.display='none';
-        document.getElementById('events').style.display='block';
-        document.getElementById('howtogetinvolved').style.display='none';
-        document.getElementById('aboutus').style.display='none';
-    }
-
-    function howtogetinvolved(){
-        document.getElementById('howtogetinvolved').style.display='block';
-        document.getElementById('events').style.display='none';
-        document.getElementById('workshops').style.display='none';
-        document.getElementById('aboutus').style.display='none';
-    }
-
-    function aboutus(){
-        document.getElementById('howtogetinvolved').style.display='none';
-        document.getElementById('events').style.display='none';
-        document.getElementById('workshops').style.display='none';
-        document.getElementById('aboutus').style.display='block';
-    }
 </script>
