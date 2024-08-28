@@ -19,6 +19,15 @@
     from { width: 0 }
 }
 
+a{
+    color: #352438;
+}
+
+a:hover{
+    color: #623d69;
+    cursor: none;
+}
+
 .accordion{
    /* margin: 60px auto; */
    width: 50%;
@@ -288,7 +297,7 @@ img{
 }
 #footer {
     width: 100%;
-    height: 15vw;
+    height: 21vw;
     background-color: #b6b8d6;
     color: #0b1423;
     text-align: left;
