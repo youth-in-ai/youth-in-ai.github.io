@@ -154,9 +154,16 @@ p, h4, h2, h1{
 }
 .column{
     float: left;
-    width: 50%;
+    width: 100%;
     padding: 1.2vw;
 }
+
+.row{
+    width: 100%;
+    clear: both;
+    margin-bottom: 3vw;
+}
+
 .column1{
     float: left;
     width: 50%;
