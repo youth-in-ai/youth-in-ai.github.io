@@ -379,9 +379,15 @@ body{
     float: left;
     width: 100%;
     padding: 2vw;
-    
-    /* padding: 1.2vw;
-    padding-right: 50px; */
 }
-
+#footer {
+    width: 100%;
+    height: auto;
+    padding-top: 3vw;
+    margin-top: 2vw;
+}   
+.foot-text {
+    width: 100%;
+    padding: 2vw;
+}
 }
