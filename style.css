@@ -386,6 +386,7 @@ body{
     height: auto;
     text-align: center; 
     float: none;
+    color: green;
 }   
 .foot-text {
     width: 100%;
