@@ -358,11 +358,30 @@ body{
 .accordion .content{
    padding:0 1.5vw;
    line-height: 1.3vw;
-}
+} 
 
 .title1{
     margin-top: 2vw;
     font-size: 30px; 
+}
+
+.column{
+    float: left;
+    width: 100%;
+    padding: 2vw;
+}
+
+.row{
+    margin-bottom: 4vw;
+}
+
+.column1{
+    float: left;
+    width: 100%;
+    padding: 2vw;
+    
+    /* padding: 1.2vw;
+    padding-right: 50px; */
 }
 
 }
