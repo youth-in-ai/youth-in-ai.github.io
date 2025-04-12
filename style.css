@@ -329,7 +329,7 @@ img{
 
 @media (max-width: 768px) {
 body{
-    font-size: 18px; 
+    font-size: 20px; 
     overflow-x: hidden;
     line-height: 1.6;
 }
