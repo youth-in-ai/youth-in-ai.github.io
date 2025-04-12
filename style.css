@@ -331,12 +331,13 @@ img{
 body{
     padding: 2vw;
     font-size: 20px; 
+    overflow-x: hidden;
 }
 .sidenav {
-    height: 6vw;
+    height: 100vh;
     width: 100%;
     font-size: 5vw;
-    padding-top: 2vw;
+    padding-top: 3vw;
 }
 
 .sidenav a {
@@ -356,38 +357,39 @@ body{
 }
     
 .accordion .content{
-   padding:0 2vw;
-   line-height: 1.8vw;
+   padding:0 3vw;
+   line-height: 2vw;
 } 
 
 .title1{
-    margin-top: 2vw;
-    font-size: 30px; 
+    margin-top: 4vw;
+    font-size: 6vw; 
 }
 
 .column{
     float: left;
     width: 100%;
-    padding: 2vw;
+    padding: 4vw;
 }
 
 .row{
-    margin-bottom: 4vw;
+    margin-bottom: 6vw;
 }
 
 .column1{
     float: left;
     width: 100%;
-    padding: 2vw;
+    padding: 4vw;
 }
 #footer {
     width: 100%;
     height: auto;
-    padding-top: 3vw;
-    margin-top: 2vw;
+    padding-top: 4vw;
+    margin-top: 4vw;
+    text-align: center; 
 }   
 .foot-text {
     width: 100%;
-    padding: 2vw;
+    padding: 4vw;
 }
 }
