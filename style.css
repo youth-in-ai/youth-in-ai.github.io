@@ -326,3 +326,43 @@ img{
 .foot-text {
     width: 50%;
 }
+
+@media (max-width: 600px) {
+body{
+    padding: 2vw;
+    font-size: 18px; 
+}
+.sidenav {
+    height: auto;
+    width: 80%;
+    font-size: 3.5vw;
+    padding-top: 1vw;
+}
+
+.sidenav a {
+    padding: 1.5vw 0.3vw;
+    font-size: 3.5vw;
+}
+
+ .accordion li{
+   margin: 2vw;
+   padding: 1.5vw;
+   font-size: 18px;
+}
+
+ .accordion li label{
+   padding: 1.5vw;
+   font-size: 16px;
+}
+    
+.accordion .content{
+   padding:0 1.5vw;
+   line-height: 1.3vw;
+}
+
+.title1{
+    margin-top: 2vw;
+    font-size: 30px; 
+}
+
+}
