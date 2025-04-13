@@ -340,13 +340,15 @@ body{
     white-space: nowrap;
     overflow-x: auto;
     padding: 15px 10px;
+    font-size: 2rem;
+
 }
 
 .sidenav a {
     padding: 0 10px;
   /*  width: 100%; */
     float: none;
-    font-size: 22px;
+    font-size: 2rem;
     display: inline;
     vertical-align: middle;
 }
@@ -410,6 +412,8 @@ body{
     margin-top: auto;
     z-index: 2;
     padding: 20px;
+    color:#b6b8d6 !important;
+
 
 }   
 .foot-text {
