@@ -338,6 +338,8 @@ body{
     height: auto;
     padding: 10px;
     position: relative;
+    z-index: 0;
+
 }
 
 .sidenav a {
@@ -393,6 +395,10 @@ body{
     height: auto;
     text-align: center; 
     float: none;
+    background-color: #b6b8d6;   
+    margin-top: auto;
+    z-index: 2;
+
 }   
 .foot-text {
     width: 100%;
