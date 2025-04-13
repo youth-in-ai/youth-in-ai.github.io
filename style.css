@@ -341,12 +341,10 @@ body{
 }
 
 .sidenav a {
-    padding: 12px;
+    padding: 10px 15px;
     width: 100%;
     float: none;
-    font-size: 20px
-    padding: 10px;
-    text-align: centre;
+    font-size: 30px
 }
     
 .card, .card2 {
