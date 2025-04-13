@@ -329,7 +329,7 @@ img{
 
 @media (max-width: 768px) {
 body{
-    font-size: 25px; 
+    font-size: 22px; 
     overflow-x: hidden;
     overflow-y: auto;
     line-height: 1.6;
@@ -339,12 +339,11 @@ body{
     text-align: center;
     white-space: nowrap;
     overflow-x: auto;
-    padding: 15px 0;
-    font-size: 22px;
+    padding: 15px 10px;
 }
 
 .sidenav a {
-    padding: 0 8px;
+    padding: 0 10px;
   /*  width: 100%; */
     float: none;
     font-size: 22px;
@@ -354,9 +353,10 @@ body{
     
 .card, .card2 {
     width: 100%; 
-    margin: 20px 0;
+    margin-left: 0;
     min-height: 20px;
-    padding: 25px;
+    padding: 15px !important;
+    float: none !important;
 }
 .accordion {
         width: 100%;
@@ -368,7 +368,7 @@ body{
 }
 
  .accordion li label{
-   font-size: 24px;
+   font-size: 1.5rem !important;
    line-height: auto;
    padding: 0 15px;
 }
@@ -376,7 +376,7 @@ body{
 .accordion .content{
    padding: 0 10px;
    line-height: 2;
-   font-size: 20px; 
+   font-size: 1.25rem !important; 
 } 
 
 .title1{
@@ -388,6 +388,7 @@ body{
     float: none;
     width: 100%;
     padding: 20px;
+    margin-left: 0;
 }
 
 .row{
@@ -398,6 +399,7 @@ body{
     float: none;
     width: 100%;
     padding: 20px;
+    Margin-left: 0;
 }
 #footer {
     width: 100%;
@@ -407,26 +409,28 @@ body{
     background-color: #b6b8d6 !important;   
     margin-top: auto;
     z-index: 2;
+    padding: 20px;
 
 }   
 .foot-text {
     width: 100%;
     text-align: center; 
     background-color: #b6b8d6 !important;  
-    font-size: 22px
+    font-size: 1.25rem !important;
+    float: none;
 }
 
  p, h4, h2, h1 {
-        font-size: 20px;
+        font-size: 1.25rem !important;
         animation: none;
 }
     
  h2 {
-    font-size: 24px;
+    font-size: 1.5rem !important;
 }
     
 h1 {
-    font-size: 30px;
+    font-size: 2rem !important;
 }
 
  .cursor-dot, .cursor-outline {
