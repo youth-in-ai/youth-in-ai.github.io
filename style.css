@@ -348,9 +348,15 @@ body{
     padding: 0 10px;
   /*  width: 100%; */
     float: none;
-    font-size: 2rem;
+    font-size: 18px !important;
     display: inline;
     vertical-align: middle;
+}
+
+.sidenav img {
+    width: 30px !important;
+    height: 30px !important;
+    margin-top: 0 !important;
 }
     
 .card, .card2 {
@@ -382,8 +388,9 @@ body{
 } 
 
 .title1{
-    margin-top: 20px;
-    font-size: 2.5rem; 
+    margin-top: 30px;
+    font-size: 2.25rem; 
+    padding-top: 10px;
 }
 
 .column{
