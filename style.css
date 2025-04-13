@@ -422,14 +422,22 @@ body{
     background-color: #b6b8d6 !important;  
     font-size: 1.25rem !important;
     float: none;
+    color:#b6b8d6 !important;
+
 }
 
 #footer h4 {
     font-size: 1.5rem !important;
+    background-color: #b6b8d6 !important;
+    color:#b6b8d6 !important;
+
 }
 
 #footer p, #footer a {
     font-size: 1.25rem !important;
+    background-color: #b6b8d6 !important;
+    color:#b6b8d6 !important;
+
 }
 
  p, h4, h2, h1 {
