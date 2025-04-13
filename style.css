@@ -398,7 +398,15 @@ body{
     width: 100%;
     text-align: center; 
     padding: 1.5rem 1rem;
-    background-color: #b6b8d6;
-    
+    background-color: #b6b8d6;   
 }
+
+ p, h4, h2, h1 {
+        font-size: 1.2rem;
+        animation: none;
+    }
+
+    .cursor-dot, .cursor-outline {
+        display: none; 
+    }
 }
