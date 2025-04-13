@@ -420,6 +420,14 @@ body{
     float: none;
 }
 
+#footer h4 {
+    font-size: 1.5rem !important;
+}
+
+#footer p, #footer a {
+    font-size: 1.25rem !important;
+}
+
  p, h4, h2, h1 {
         font-size: 1.25rem !important;
         animation: none;
