@@ -339,7 +339,7 @@ body{
 .sidenav {
     height: auto;
     text-align: center;
-    white-space: normal;
+    white-space: no-wrap;
     overflow-x: auto;
     padding: 10px 5px;
     position: sticky;
@@ -354,7 +354,7 @@ body{
     font-size: 1.5rem !important;
     display: inline-block;
     vertical-align: middle;
-    white-space: normal;
+    white-space: no-wrap;
     text-align: left;
 }
 
