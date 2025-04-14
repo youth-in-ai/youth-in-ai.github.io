@@ -334,7 +334,7 @@ body{
     overflow-y: auto;
     line-height: 1.6;
     word-wrap: break-word;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 .sidenav {
     height: auto;
@@ -385,15 +385,16 @@ body{
 }
 
  .accordion li label{
-   font-size: 1.5rem !important;
+   font-size: 1.25rem !important;
    line-height: auto;
-   padding: 0 15px;
+   padding: 12px;
 }
     
 .accordion .content{
-   padding: 0 10px;
-   line-height: 2;
-   font-size: 1.25rem !important; 
+   padding: 0 15px;
+   line-height: 1.6;
+   font-size: 1.2rem !important; 
+   max-height: none;
 } 
 
 .title1{
@@ -420,36 +421,28 @@ body{
     Margin-left: 0;
 }
 #footer {
-    width: 100%;
     height: auto;
-    text-align: center; 
-    float: none;
     background-color: #b6b8d6 !important;   
-    margin-top: auto;
-    z-index: 2;
     padding: 20px 15px;
-    color:#b6b8d6 !important;
-
 
 }   
 .foot-text {
     width: 100%;
     text-align: center; 
-    background-color: #b6b8d6 !important;  
-    font-size: 1.25rem !important;
     float: none;
+    height: auto;
     margin: 15px 0;
 }
 
-#footer h4 {
-    font-size: 1.5rem !important;
+.foot-text h4, .foot-text p  {
+    text-align: center !important;
+    margin: 10px 0 !important;
+    font-size: 1.2rem !important;
 }
 
-#footer p, #footer a {
-    font-size: 1.25rem !important;
-    display: nlock;
-    margin: 10px 0;
-}
+.foot-text h4 {
+        display: block !important;
+    }
 
  p, h4, h2, h1 {
         font-size: 1.25rem !important;
@@ -474,5 +467,15 @@ img{
 max-width: 100%;
 height: auto;
 }
+
+[style*="display: flex; background-color: #e8dab2;"] {
+        flex-direction: column !important;
+    }
+
+[style*="display: flex; background-color: #e8dab2;"] p {
+        width: 90% !important;
+        margin: 15px auto !important;
+        padding: 5px 0 !important;
+    }
 
 }
