@@ -339,7 +339,7 @@ body{
 .sidenav {
     height: auto;
     text-align: center;
-    white-space: nowrap;
+    white-space: normal;
     overflow-x: auto;
     padding: 10px 5px;
     position: sticky;
@@ -354,7 +354,7 @@ body{
     font-size: 1.5rem !important;
     display: inline-block;
     vertical-align: middle;
-    white-space: nowrap;
+    white-space: normal;
     text-align: left;
 }
 
@@ -366,7 +366,7 @@ body{
 
 #home, #aboutus, #hackathons, #articles, #events {
     margin-top: 0 !important;
-    padding: 0 20px;
+    padding: 0 5px;
     float: none !important;
     box-sizing: border-box; 
 }
