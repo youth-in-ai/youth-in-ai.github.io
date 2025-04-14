@@ -334,6 +334,7 @@ body{
     overflow-y: auto;
     line-height: 1.6;
     word-wrap: break-word;
+    padding-top: 30px;
 }
 .sidenav {
     height: auto;
@@ -341,30 +342,33 @@ body{
     white-space: nowrap;
     overflow-x: auto;
     padding: 10px 5px;
-    font-size: 2rem;
     position: sticky;
     z-index: 10;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .sidenav a {
     padding: 5 10px !important;
   /*  width: 100%; */
-    float: none;
-    font-size: 18px !important;
+    font-size: 1.5rem !important;
     display: inline-block;
     vertical-align: middle;
     white-space: nowrap;
+    text-align: left;
 }
 
 .sidenav img {
-    width: 50px !important;
-    height: 50px !important;
+    width: 40px !important;
+    height: 40px !important;
     margin-top: 0 !important;
 }
 
 #home, #aboutus, #hackathons, #articles, #events {
     margin-top: 0 !important;
-    padding: 0 15px;
+    padding: 0 20px;
+    float: none !important;
+    box-sizing: border-box; 
 }
 .card, .card2, .accordion {
     width: 100%; 
